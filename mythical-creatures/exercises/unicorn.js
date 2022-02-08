@@ -3,7 +3,7 @@ class Unicorn {
     this.color = 'white'
     this.name = name;
     if (color !== undefined) {
-      this.color = color';
+      this.color = color;
     } 
   }
 
