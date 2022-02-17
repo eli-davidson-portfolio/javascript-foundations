@@ -8,6 +8,7 @@ class Pirate {
             this.job = job;
         }
     }
+    
     robShip() {
         this.booty += 100;
         if (this.booty >= 500) {

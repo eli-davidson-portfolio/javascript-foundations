@@ -9,7 +9,16 @@
   "author": "Turing School",
   "license": "MIT",
   "dependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^5.2.0"
-  }
+    "chai": "^4.3.6",
+    "mocha": "^9.1.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elleshadow/javascript-foundations.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elleshadow/javascript-foundations/issues"
+  },
+  "homepage": "https://github.com/elleshadow/javascript-foundations#readme"
 }

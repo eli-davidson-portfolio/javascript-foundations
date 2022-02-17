@@ -1,25 +1,24 @@
 class Ogre {
-    constructor(object) {
-        this.name = object.name;
-        this.home = object.abode || `Swamp`;
-        this.swings = 0
+    constructor(ogre) {
+        this.name = ogre.name;
+        this.home = ogre.abode || 'Swamp';
+        this.swings = 0;
     }
     encounter(human) {
-        human.encounterCounter++
-        if (human.encounterCounter === 3) {
-            this.swings++
-        }
-        if (human.encounterCounter === 6) {
-            human.knockedOut = true;
-            this.swings++
-        }
+        human.encounterCounter++;
+        if(human.noticesOgre()) {
+            this.swingAt(human);
+        };
     }
     swingAt(human) {
-        this.swings++
-    } 
-    apologize(human){
+        this.swings++;
+        if (!(this.swings % 2)) {
+            human.knockedOut = true;
+        }
+    }
+    apologize(human) {
         human.knockedOut = false;
-    } 
+    }
 }
 
 module.exports = Ogre;
