@@ -10,13 +10,10 @@ class Vampire {
   }
 
   drink() {
-      if(this.ouncesDrank < 50) {
-          this.ouncesDrank = this.ouncesDrank + 10;
-          return
-      } return 'I\'m too full to drink anymore!';
-      this.thirsty = (this.ouncesDrank === 0);
+      this.thirsty = false
+      if(this.ouncesDrank >= 50) {
+       return 'I\'m too full to drink anymore!';
+      } this.ouncesDrank = this.ouncesDrank + 10;
     }
   }
-
-}
 module.exports = Vampire;
