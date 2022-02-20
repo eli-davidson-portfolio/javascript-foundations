@@ -3,7 +3,7 @@ class Ship {
         this.name = ship.name;
         this.type = ship.type;
         this.maxCrew = ship.maxCrew;
-
+        this.odometer = 0;
     }
 }
 
