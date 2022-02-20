@@ -4,7 +4,7 @@ var Being = require('../src/being');
 var Part = require('../src/part');
 
 describe('Ship', function() {
-  it.skip('should be able to have a name', function() {
+  it('should be able to have a name', function() {
     var shuttle1 = new Ship({ name: 'Wanderer' });
     var shuttle2 = new Ship({ name: 'Atlantis' });
 
