@@ -22,7 +22,7 @@ class Ship {
     loadCargo(cargo) {
         if (cargo.constructor.name === 'Part') {
             this.cargo.push(cargo);
-        }
+        } 
     }
     updatePart(part) {
         if (this.parts[part.type]) {
