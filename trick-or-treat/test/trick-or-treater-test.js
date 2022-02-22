@@ -6,7 +6,7 @@ var TrickOrTreater = require('../lib/trick-or-treater');
 
 describe('TrickOrTreater', function () {
 
-  it('should be a function', function () {
+  it.skip('should be a function', function () {
     assert.isFunction(TrickOrTreater);
   });
 
