@@ -5,12 +5,16 @@ class Bag {
         this.updateCount()
     }
     fill(candy) {
-        this.candies.push(candy)
-        this.updateCount()
+        if (candy) {
+            this.candies.push(candy)
+            this.updateCount()
+        }
+        
     }
     updateCount() {
         this.count = this.candies.length;
         this.empty = (!this.count);
+        return this.count
     }
     contains(candyType) {
         for (var i =0; i <this.count; i++) {
