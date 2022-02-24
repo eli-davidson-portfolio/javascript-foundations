@@ -6,7 +6,6 @@ class TrickOrTreater {
         this.bag = bag;
         this.hasCandy = false;
         this.countCandies = 0;
-
     }
     putCandyInBag(candy){
         this.bag.fill(candy);
