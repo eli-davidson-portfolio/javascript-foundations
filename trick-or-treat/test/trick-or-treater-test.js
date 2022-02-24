@@ -6,11 +6,11 @@ var TrickOrTreater = require('../lib/trick-or-treater');
 
 describe('TrickOrTreater', function () {
 
-  it.skip('should be a function', function () {
+  it('should be a function', function () {
     assert.isFunction(TrickOrTreater);
   });
 
-  it.skip('should wear a costume', function () {
+  it('should wear a costume', function () {
 
     var costume = new Costume('Cowboy');
     var trickOrTreater = new TrickOrTreater(costume);
@@ -18,7 +18,7 @@ describe('TrickOrTreater', function () {
   });
 
 
-  it.skip('should wear a different costume', function () {
+  it('should wear a different costume', function () {
     var costume = new Costume('Doctor');
     var trickOrTreater = new TrickOrTreater(costume);
     assert.equal(trickOrTreater.dressedUpAs, 'Doctor');
