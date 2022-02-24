@@ -1,6 +1,7 @@
 class Costume {
-    constructor(type) {
-        this.type = type;
+    constructor(style) {
+        this.style = style;
+        
     }
 }
 
